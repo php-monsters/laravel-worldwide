@@ -74,7 +74,7 @@
                 "PhpMonster\\Worldwide\\WorldwideServiceProvider"
             ],
             "aliases": {
-                "World": "PhpMonster\\Worldide\\Facades\\Worldwide"
+                "Worldwide": "PhpMonster\\Worldide\\Facades\\Worldwide"
             }
         }
     },
