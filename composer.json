@@ -1,0 +1,83 @@
+{
+    "name": "php-monsters/laravel-worldwide",
+    "description": "Laravel World, Countries States Cities DB Migration & Seeder",
+    "keywords": [
+        "countries",
+        "states",
+        "cities",
+        "laravel",
+        "laravel-worldwide"
+    ],
+    "homepage": "https://github.com/php-monsters/laravel-worldwide",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aboozar Ghaffari",
+            "email": "aboozar.ghf@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "spatie/laravel-package-tools": "^1.16",
+        "illuminate/contracts": "^10.0||^11.0",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^2.34",
+        "pestphp/pest-plugin-arch": "^2.7",
+        "pestphp/pest-plugin-laravel": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpMonster\\Worldwide\\": "src/",
+            "PhpMonster\\Worldwide\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpMonster\\Worldwide\\Tests\\": "tests/",
+            "PhpMonster\\App\\": "workbench/app/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@composer run prepare",
+        "clear": "@php vendor/bin/testbench package:purge-laravel-world --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": [
+            "@composer run prepare",
+            "@php vendor/bin/testbench workbench:build --ansi"
+        ],
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "@composer run build",
+            "@php vendor/bin/testbench serve"
+        ],
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PhpMonster\\Worldwide\\WorldwideServiceProvider"
+            ],
+            "aliases": {
+                "World": "PhpMonster\\Worldide\\Facades\\Worldwide"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
