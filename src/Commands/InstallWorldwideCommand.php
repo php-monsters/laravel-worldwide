@@ -8,15 +8,11 @@ class InstallWorldwideCommand extends Command
 {
     /**
      * The name and signature of the console command.
-     *
-     * @var string
      */
     protected string $signature = 'worldwide:install';
 
     /**
      * The console command description.
-     *
-     * @var string
      */
     protected string $description = 'Install php-monsters/laravel-worldwide package';
 

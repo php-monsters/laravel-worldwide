@@ -2,8 +2,8 @@
 
 namespace PhpMonster\Worldwide\Tests;
 
-use PhpMonster\Worldwide\WorldServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use PhpMonster\Worldwide\WorldServiceProvider;
 
 class TestCase extends Orchestra
 {

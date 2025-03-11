@@ -2,8 +2,8 @@
 
 namespace PhpMonster\Worldwide\Commands;
 
-use PhpMonster\Worldwide\Worldwide;
 use Illuminate\Console\Command;
+use PhpMonster\Worldwide\Worldwide;
 
 class SeederWorldwideCommand extends Command
 {

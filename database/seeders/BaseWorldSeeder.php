@@ -2,12 +2,12 @@
 
 namespace PhpMonster\Worldwide\Database\Seeders;
 
+use Illuminate\Database\Seeder;
 use PhpMonster\Worldwide\Exceptions\InvalidCodeException;
 use PhpMonster\Worldwide\Models\City;
 use PhpMonster\Worldwide\Models\Country;
 use PhpMonster\Worldwide\Models\State;
 use PhpMonster\Worldwide\World;
-use Illuminate\Database\Seeder;
 
 class BaseWorldSeeder extends Seeder
 {
