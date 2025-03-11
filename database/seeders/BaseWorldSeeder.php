@@ -7,12 +7,12 @@ use PhpMonsters\Worldwide\Exceptions\InvalidCodeException;
 use PhpMonsters\Worldwide\Models\City;
 use PhpMonsters\Worldwide\Models\Country;
 use PhpMonsters\Worldwide\Models\State;
-use PhpMonsters\Worldwide\World;
+use PhpMonsters\Worldwide\Worldwide;
 
 class BaseWorldSeeder extends Seeder
 {
     public function __construct(
-        protected World $serves
+        protected Worldwide $serves
     ) {}
 
     /**

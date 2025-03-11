@@ -69,7 +69,7 @@ composer require php-monsters/laravel-worldwide
 ## Usage
 Now run the following command to install.
 ```bash
-php artisan world:install
+php artisan worldwide:install
 ```
 
 Add seeder File in `database\seeders\DatabaseSeeder.php` add this line to use `php artisan db:seed` command.
