@@ -1,13 +1,13 @@
 <?php
 
-namespace PhpMonster\Worldwide\Database\Seeders;
+namespace PhpMonsters\Worldwide\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use PhpMonster\Worldwide\Exceptions\InvalidCodeException;
-use PhpMonster\Worldwide\Models\City;
-use PhpMonster\Worldwide\Models\Country;
-use PhpMonster\Worldwide\Models\State;
-use PhpMonster\Worldwide\World;
+use PhpMonsters\Worldwide\Exceptions\InvalidCodeException;
+use PhpMonsters\Worldwide\Models\City;
+use PhpMonsters\Worldwide\Models\Country;
+use PhpMonsters\Worldwide\Models\State;
+use PhpMonsters\Worldwide\World;
 
 class BaseWorldSeeder extends Seeder
 {
@@ -16,7 +16,7 @@ class BaseWorldSeeder extends Seeder
     ) {}
 
     /**
-     * @throws \PhpMonster\Worldwide\Exceptions\IsoCodesIsEmptyException
+     * @throws \PhpMonsters\Worldwide\Exceptions\IsoCodesIsEmptyException
      */
     public function run(): void
     {

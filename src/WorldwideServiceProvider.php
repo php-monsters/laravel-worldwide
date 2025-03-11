@@ -2,7 +2,7 @@
 
 namespace PhpMonsters\Worldwide;
 
-use PhpMonster\Worldwide\Commands\SeederWorldwideCommand;
+use PhpMonsters\Worldwide\Commands\SeederWorldwideCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

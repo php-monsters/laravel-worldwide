@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use PhpMonster\Worldwide\Models\Country as Model;
+use PhpMonsters\Worldwide\Models\Country as Model;
 
 class Country extends Model
 {

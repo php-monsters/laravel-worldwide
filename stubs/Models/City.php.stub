@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use PhpMonster\Worldwide\Models\City as Model;
+use PhpMonsters\Worldwide\Models\City as Model;
 
 class City extends Model
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpMonster\Worldwide\Commands;
+namespace PhpMonsters\Worldwide\Commands;
 
 use Illuminate\Console\Command;
 

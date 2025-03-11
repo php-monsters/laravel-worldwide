@@ -11,6 +11,6 @@ class WorldTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call('PhpMonster\Worldwide\Database\Seeders\BaseWorldSeeder');
+        $this->call('PhpMonsters\Worldwide\Database\Seeders\BaseWorldSeeder');
     }
 }

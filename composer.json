@@ -1,6 +1,6 @@
 {
     "name": "php-monsters/laravel-worldwide",
-    "description": "Laravel World, Countries States Cities DB Migration & Seeder",
+    "description": "Laravel Worldwide, Countries States Cities DB Migration & Seeder",
     "keywords": [
         "countries",
         "states",
@@ -33,14 +33,14 @@
     },
     "autoload": {
         "psr-4": {
-            "PhpMonster\\Worldwide\\": "src/",
-            "PhpMonster\\Worldwide\\Database\\Seeders\\": "database/seeders/"
+            "PhpMonsters\\Worldwide\\": "src/",
+            "PhpMonsters\\Worldwide\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PhpMonster\\Worldwide\\Tests\\": "tests/",
-            "PhpMonster\\App\\": "workbench/app/"
+            "PhpMonsters\\Worldwide\\Tests\\": "tests/",
+            "PhpMonsters\\App\\": "workbench/app/"
         }
     },
     "scripts": {
@@ -71,10 +71,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PhpMonster\\Worldwide\\WorldwideServiceProvider"
+                "PhpMonsters\\Worldwide\\WorldwideServiceProvider"
             ],
             "aliases": {
-                "Worldwide": "PhpMonster\\Worldide\\Facades\\Worldwide"
+                "Worldwide": "PhpMonsters\\Worldide\\Facades\\Worldwide"
             }
         }
     },

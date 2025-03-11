@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpMonster\Worldwide\Commands;
+namespace PhpMonsters\Worldwide\Commands;
 
 use Illuminate\Console\Command;
-use PhpMonster\Worldwide\Worldwide;
+use PhpMonsters\Worldwide\Worldwide;
 
 class SeederWorldwideCommand extends Command
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpMonster\Worldwide\Exceptions;
+namespace PhpMonsters\Worldwide\Exceptions;
 
 use Exception;
 
