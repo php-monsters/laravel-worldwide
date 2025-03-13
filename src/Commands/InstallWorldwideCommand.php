@@ -14,7 +14,7 @@ class InstallWorldwideCommand extends Command
     /**
      * The console command description.
      */
-    protected string $description = 'Install php-monsters/laravel-worldwide package';
+    protected $description = 'Install php-monsters/laravel-worldwide package';
 
     protected ?string $starRepo = 'php-monsters/laravel-worldwide';
 
