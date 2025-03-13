@@ -9,7 +9,7 @@ class InstallWorldwideCommand extends Command
     /**
      * The name and signature of the console command.
      */
-    protected string $signature = 'worldwide:install';
+    protected $signature = 'worldwide:install';
 
     /**
      * The console command description.
