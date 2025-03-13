@@ -2,6 +2,7 @@
 
 namespace PhpMonsters\Worldwide;
 
+use PhpMonsters\Worldwide\Commands\InstallWorldwideCommand;
 use PhpMonsters\Worldwide\Commands\SeederWorldwideCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -12,7 +13,7 @@ class WorldwideServiceProvider extends PackageServiceProvider
     {
 
         $package
-            ->name('laravel-world')
+            ->name('laravel-worldwide')
             ->hasConfigFile()
             ->hasMigration('create_worldwide_table')
             ->hasCommands([
