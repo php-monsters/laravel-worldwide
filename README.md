@@ -7,7 +7,7 @@
 ╚═╝     ╚═╝  ╚═╝╚═╝         ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚══════╝
 ```
 # Php Monsters Laravel Worldwide
-This package will allow you to add all Countries, States, Cities' Data DB Migration & Seeder for Laravel
+This package will allow you to add all Countries, States, Cities' Data DB Migration & Seeder for Laravel 10+
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/php-monsters/laravel-worldwide.svg?style=flat-square)](https://packagist.org/packages/php-monsters/laravel-worldwide)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/php-monsters/laravel-worldwide/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/php-monsters/laravel-worldwide/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -76,7 +76,6 @@ Add seeder File in `database\seeders\DatabaseSeeder.php` add this line to use `p
 ```php
 public function run(): void
     {
-    
         $this->call(WorldTableSeeder::class);
         ...
     }
